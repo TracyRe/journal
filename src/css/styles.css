@@ -5,12 +5,55 @@
 
 html {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 body {
-  background-color: lightgoldenrodyellow;
+  background: linear-gradient(45deg,#440947, #634b58);
+  height: 100vh
 }
+
+p {
+  line-height: 140%;
+  margin: 0 0 1rem 0;
+  color: #efedee;
+}
+h1, h2, h3 {
+  margin: 1rem 0 .5rem 0;
+  font-weight: normal;
+  color: #efedee;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+label {
+  color: #efedee;
+  font-size: 1rem;
+  margin:
+}
+
+input, textarea {
+  font-size: .85rem;
+  line-height: 120%;
+  margin-top: .5rem;
+}
+
+input[type="text"] {
+  width: 70%;
+  height: 30px;
+}
+
 
 .container {
   width: 800px;
@@ -25,11 +68,39 @@ body {
   align-self: center;
 }
 #title{
-  align-self: center;
+  align-self: left;
 }
 
 .button {
-  align-self: center;
-  border: 2px black solid;
-  width: 10%;
+  align-self: left;
+  border: 1px black solid;
+  width: 100px;
+  background: #c6bec2;
+  text-transform: uppercase;
+  letterspacing: .1em;
+  font-size: 1rem;
+  padding: .5rem .5rem .5rem .5rem;
+  margin: .5rem 0;
+  cursor: pointer;
+}
+
+.button:hover, .button: active {
+  background: #e0bcce;
+}
+
+.result {
+  color: #efedee;
+
+}
+
+.counts {
+  font-size: .85rem;
+  color: #efedee;
+
+}
+
+.journal-entry {
+  font-size: 1rem;
+  line-height: 140%;
+  color: #efedee;
 }

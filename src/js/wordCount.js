@@ -62,10 +62,10 @@ export function getTeaser() {
 
   var teaser = entryText.split(/[.!?]+/)[0];
   var teaserText = teaser.split(" ");
-  if (teaserSentence > 8) {
+  if (teaserText.length > 8) {
     teaserSentence = teaserText.slice(0,8).join(" ") + "...";
   } else {
-    teaserSentence = teaser;
-   }
+    teaserSentence = teaserText.join(" ");
+  }
   return teaserSentence;
 }

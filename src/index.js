@@ -10,12 +10,26 @@ $(document).ready(function() {
     event.preventDefault();
     var title = $("#title").val();
     var entryText = $("#entry-text").val();
-    $(".result").append(title);
-    $(".result").append(entryText);
-    $(".result").append(wordCount);
-    $(".result").append(vowelCount);
-    $(".result").append(consonantCount);
-    $(".result").append(getTeaser);
+    $(".result").prepend(entryText);
+    $(".result").prepend(getTeaser);
+    $(".result").prepend(vowelCount);
+    $(".result").prepend(consonantCount);
+    $(".result").prepend(wordCount);
+    $(".result").prepend("<h2>" + title + "</h2>");
   });
 
 });
+
+
+
+// $("#journal").submit(function(event) {
+//   event.preventDefault();
+//   var title = $("#title").val();
+//   var entryText = $("#entry-text").val();
+//   $(".result").prepend("<div class='journal-entry'>" + entryText + "</div>");
+//   $(".result").prepend("<h3>" + getTeaser + "</h3>");
+//   $(".result").prepend(" <strong>Vowels: </strong>" + vowelCount + "</div>");
+//   $(".result").prepend(" <strong>Consonants: </strong>" + consonantCount);
+//   $(".result").prepend("<div class='counts'><strong>Words: </strong>" + wordCount);
+//   $(".result").prepend("<h2>" + title + "</h2>");
+// });
