@@ -9,8 +9,7 @@ html {
 }
 
 body {
-  background: linear-gradient(45deg,#440947, #634b58);
-  height: 100vh
+  background-color: #440947;
 }
 
 p {
@@ -26,6 +25,7 @@ h1, h2, h3 {
 
 h1 {
   font-size: 3.5rem;
+  text-shadow: 1px 1px 10px #30041c; /* 634b58;*/
 }
 
 h2 {
@@ -47,11 +47,21 @@ input, textarea {
   font-size: .85rem;
   line-height: 120%;
   margin-top: .5rem;
+  padding: .5rem;
 }
 
 input[type="text"] {
   width: 70%;
   height: 30px;
+}
+
+.wrap {
+  background: linear-gradient(#634b58, #440947);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 
@@ -72,19 +82,39 @@ input[type="text"] {
 }
 
 .button {
+  flex-grow: 0;
   align-self: left;
-  border: 1px black solid;
-  width: 100px;
-  background: #c6bec2;
+  width: 30%;
+  max-width: 300px;
+  min-width: 100px;
+  padding: .5rem 2rem;
+  margin: .5rem 4rem 0 0;
   text-transform: uppercase;
-  letterspacing: .1em;
+  letter-spacing: .1em;
   font-size: 1rem;
-  padding: .5rem .5rem .5rem .5rem;
-  margin: .5rem 0;
   cursor: pointer;
+  border-radius: 6px;
 }
 
-.button:hover, .button: active {
+button#submit {
+  background: #b18dc1;
+  border: 1px #270428 solid;
+  box-shadow: 1px 1px 10px #270428;
+  color: #270428;
+}
+
+button#submit:hover, button#submit: active {
+  background: #ce9ce5;
+}
+
+button#reset {
+  background: #c6bec2;
+  border: 1px #270428 solid;
+  box-shadow: 1px 1px 10px #270428;
+  color: #270428;
+}
+
+button#reset:hover, button#reset: active {
   background: #e0bcce;
 }
 
